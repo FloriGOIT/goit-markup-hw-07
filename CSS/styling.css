@@ -1,8 +1,5 @@
 body {font-family: 'Roboto', sans-serif;
-        color:var(--main-color);
-        margin-left:calc((100vw - 1470px)/2);
-        max-width: 1500px;
-        width: 100vw;}
+        color:var(--main-color);}
 
 ul  {list-style-type: none;
      padding: 0px;}
@@ -21,7 +18,9 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
        --ro500-s20-lh24: normal normal 500 20px/24px Roboto, sans-serif;
        --logo-ra700-s18-lh21: normal normal 800 18px/21px 'Raleway', sans-serif;
        --color-iris:rgba(77, 90, 229, 1);
-       --first-heading: normal normal 700 56px/60px Roboto, sans-serif;
+       --first-heading-d: normal normal 700 56px/60px Roboto, sans-serif;
+       --first-heading-t: normal normal 700 56px/60px Roboto, sans-serif;
+       --first-heading-m: normal normal 700 36px/40px Roboto, sans-serif;
        --second-heading: normal normal 700 36px/40px Roboto, sans-serif;}
 
 .container {box-sizing: content-box;
@@ -54,7 +53,9 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                      flex-direction: row;
                      align-items: center;}
 .navigatoion-menu {padding-left: 76px;
-                   max-width: 335px;}
+                   max-width: 335px;
+                   display: none;}
+                  
 .navigation-pages {display: flex;
                   flex-direction: row;
                   column-gap: 40px;
@@ -93,54 +94,44 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 
 /*HEADER 3.ADDRESS decoration*/
-.header-address  {display: flex;
-        flex-direction: row;
-        align-items: center;
-        column-gap: 40px;
-        padding-left: 306px;
-        letter-spacing: 0.0215em;
-        margin: 0px;
-        font: var(--ro400-s16-lh24);
-        color:#434455;}
-.header-address li{display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        margin-top: 0;
-        margin-bottom: 0;
-        transition-property:color,fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;}
-
-.header-address li:focus,
-.header-address li:hover {color: var(--heighlight-bgcolor); /*transition*/
-                          fill:var(--heighlight-bgcolor)}
+.header-address  {display: none;}
 
 
 .heading {box-sizing: border-box;
          background-color: rgba(46, 47, 66, 0.7);
-         max-width: 1470px;
+         max-width: 1440px;
          padding: 188px 472px;
-         background-image:
-    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.png");}
+         background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1440x600-1x.png");
+         background-size: cover;
+         background-position: 50% 50%;}
+
+ @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) 
+         {
+         .heading {background-image: 
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2880x1200-2x.png");}
+        }
  
-.first-header  {font: var(--first-heading);
+.first-header  {font: var(--first-heading-m);
                 color: white;
-                padding: 0px;
-                text-align: center;
-                margin-top:0px;
-                margin-bottom:0px;
-                width: 496px;}
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: auto;
+                min-width: 320px;}
 
 .order-service-button {box-sizing: border-box;
                         font:var(--ro500-s16-lh24);
                         background-color: var(--color-iris);
                         color: white;
                         cursor: pointer;
+                        margin-left: auto;
+                        margin-right: auto;
                         margin-top:48px;
-                        margin-left: 180px;
                         padding: 16px 32px 16px 32px;
+                        border-radius: 4px;
                         border-width: 0px;
                         transition-property: color, background-color, box-shadow;
                         transition-duration: 250ms;
@@ -575,5 +566,67 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                 0% {scale: 0;}
                 100% {scale: 1;}}
 
+@media screen and (min-width: 1158px) 
+        {
+        .navigatoion-menu {display: block;}
+
+        .header-address  {display: flex;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 40px;
+                padding-left: 306px;
+                letter-spacing: 0.0215em;
+                margin: 0px;
+                font: var(--ro400-s16-lh24);
+                color:#434455;}
+        .header-address li{display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                margin-top: 0;
+                margin-bottom: 0;
+                transition-property:color,fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-delay: 0;}
+        
+        .header-address li:focus,
+        .header-address li:hover {color: var(--heighlight-bgcolor); /*transition*/
+                                  fill:var(--heighlight-bgcolor)}
+        
+        .heading {box-sizing: border-box;
+         background-color: rgba(46, 47, 66, 0.7);
+         max-width: 1440px;
+         margin: auto;
+         background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1440x600-1x.png");
+         background-size: 1440px 600px;}
+
+        @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) 
+                {
+                .heading {background-image: 
+                linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2880x1200-2x.png");}
+                }
+        
+        body {font-family: 'Roboto', sans-serif;
+                color:var(--main-color);
+                margin-left:auto;
+                margin-right: auto;
+                max-width: 1500px;}
+        
+        .first-header  {font: var(--first-heading-d);
+                        color: white;
+                        padding: 0px;
+                        text-align: center;
+                        margin-top:0px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 496px;}
+        
+        }
+
+@media screen and (min-width: 768px){}
 
 
