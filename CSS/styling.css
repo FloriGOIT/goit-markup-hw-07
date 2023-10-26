@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 .logo-studio-header  {color: var(--main-color);
                         letter-spacing: 0.03em;}
+.hamburger {display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;}
+.icon-hamburger { width: 1.4541015625em;}
 
 
 /*NAV decoration*/
@@ -568,6 +575,7 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 @media screen and (min-width: 1158px) 
         {
+        .hamburger {display: none;}
         .navigatoion-menu {display: block;}
 
         .header-address  {display: flex;
