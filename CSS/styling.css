@@ -58,7 +58,8 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 .navigation-address {display: flex;
                      flex-direction: row;
-                     align-items: center;}
+                     align-items: center;
+                     width: 428px;}
 .navigatoion-menu {padding-left: 76px;
                    max-width: 335px;
                    display: none;}
@@ -149,8 +150,6 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                              border-width: 0px;
                              box-shadow: inset 0 0 4px 5px cornflowerblue;}
 
-.navigation-address {border-bottom: 1px solid #E7E9FC;}
-
 /*MENU BUTTONS*/
 .page-buttons {cursor: pointer;
                      display: flex;
@@ -160,7 +159,8 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                      padding-top: 96px;
                      padding-bottom: 72px;
                      margin-top: 0px;
-                     margin-bottom: 0px;}
+                     margin-bottom: 0px;
+                     border-top: 1px solid #E7E9FC;}
 
 
 /*MENU*/
@@ -575,6 +575,7 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 @media screen and (min-width: 1158px) 
         {
+        .navigation-address {min-width: 1440px;}
         .hamburger {display: none;}
         .navigatoion-menu {display: block;}
 
