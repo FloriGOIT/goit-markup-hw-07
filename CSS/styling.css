@@ -23,16 +23,19 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
        --first-heading-m: normal normal 700 36px/40px Roboto, sans-serif;
        --second-heading: normal normal 700 36px/40px Roboto, sans-serif;}
 
-.container {box-sizing: content-box;
-           max-width: 1158px;
-           padding: 0px 156px}
+
 
 /*HEADER*/
-
-/*HEADER 1.HEADER decoration*/
-
-
-/*HEADER 2.LOGO decoration*/
+.navigation-address {display: flex;
+                     flex-direction: row;
+                     align-items: center;
+                     width: 428px;}
+.navigation-address .navigation-logo-hamburger {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            padding: 26px 16px;
+                            width: 428px;}
 .logo {font: var(--logo-ra700-s18-lh21);
         text-decoration: none;
         margin: 0px;
@@ -56,10 +59,7 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 /*NAV decoration*/
 .navigation-menu {margin: 0px;}
 
-.navigation-address {display: flex;
-                     flex-direction: row;
-                     align-items: center;
-                     width: 428px;}
+
 .navigatoion-menu {padding-left: 76px;
                    max-width: 335px;
                    display: none;}
@@ -106,21 +106,21 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 
 .heading {box-sizing: border-box;
-         background-color: rgba(46, 47, 66, 0.7);
-         max-width: 1440px;
-         padding: 188px 472px;
-         background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1440x600-1x.png");
-         background-size: cover;
-         background-position: 50% 50%;}
+        background-color: rgba(46, 47, 66, 0.7);
+        max-width: 1440px;
+        padding: 188px 472px;
+        background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1440x600-1x.png");
+        background-size: cover;
+        background-position: 50% 50%;}
 
- @media (min-device-pixel-ratio: 2),
-         (-webkit-min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) 
-         {
-         .heading {background-image: 
-        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2880x1200-2x.png");}
-        }
+@media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) 
+        {
+        .heading {background-image: 
+       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2880x1200-2x.png");}
+       }
  
 .first-header  {font: var(--first-heading-m);
                 color: white;
@@ -575,6 +575,10 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
 
 @media screen and (min-width: 1158px) 
         {
+        .container {box-sizing: content-box;
+                        max-width: 1158px;
+                        padding: 0px 156px}
+                       
         .navigation-address {min-width: 1440px;}
         .hamburger {display: none;}
         .navigatoion-menu {display: block;}
@@ -607,6 +611,8 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
          background-color: rgba(46, 47, 66, 0.7);
          max-width: 1440px;
          margin: auto;
+         padding-top: 188px;
+         padding-bottom: 188px;
          background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-1440x600-1x.png");
          background-size: 1440px 600px;}
 
