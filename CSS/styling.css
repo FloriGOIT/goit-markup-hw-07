@@ -519,7 +519,8 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                                                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                                                 transition-delay: 0;}
 
-.modal-container fieldset .checkbox-label {display: flex;
+.modal-container fieldset .checkbox-label {position: relative;
+                                           display: flex;
                                            flex-direction: row;
                                            align-items: center;
                                            gap: 5px;
@@ -527,37 +528,19 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                                            margin-bottom: 0px;}
 
 .modal-container fieldset .checkbox-label svg {position: absolute;
-                                              top:392px;
+                                              top:7px;
                                               left: 0px;}
 .modal-container fieldset .checkbox-label a {font:var(--ro400-s12-lh16)}
 
 .modal-container fieldset .checkbox-label input {height: 16px;
-                                                width: 16px;}
-.modal-container fieldset .checkbox-label p {margin-left: 23px;}
-.checkbox-label input:checked ~.check_color {background-color: var(--color-iris);}
-.check_color:after {
-        content: "";
-        position: absolute;
-        display: none;
-      }
-.checkbox-label input:checked ~ .check_color:after {
-        display: block;
-      }
-.check_color {position: absolute;
-            height: 16px;
-            width: 16px;
-            background-color:initial;}
-.checkbox-label .check_color:after {
-                left: 5.5px;
-                top: 2px;
-                width: 5px;
-                height: 10px;
-                border: solid white;
-                border-width: 0 3px 3px 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-              }
+                                                width: 16px;
+                                                margin-top: 7px;}
+.modal-container fieldset .checkbox-label input:checked {accent-color: var(--color-iris);
+                                                        z-index: 2;}
+.modal-container fieldset .checkbox-label p {margin-left: 6px;}
+.is-hidden {visibility: hidden;}
+
+              
 .modal-container button {margin:24px 96px;
                         padding:16px 32px;
                         width: 169px;
@@ -567,7 +550,7 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
                         border-radius: 4px;
                         box-shadow:0 4px 4px 0px rgba(0, 0, 0, 0.15);}
 
-.is-hidden {visibility: hidden;}
+
 
 @keyframes scaleModal {
                 0% {scale: 0;}
