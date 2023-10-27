@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, p {margin: 0px;}
          (-webkit-min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) 
-         {.box {background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2880x1200-2x.png");}}
+         {.heading {background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-2880x1200-2x.png");}}
  
 .first-header  {font: var(--first-heading);
                 color: white;
