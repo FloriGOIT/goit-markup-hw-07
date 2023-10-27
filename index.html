@@ -90,19 +90,23 @@
 				<h2>What are we doing</h2>
 				<ul  class="cards-description">
 					<li class="card-description-studio">
-						<img src="./images/1one-desktop.jpg" alt="one-desktop" width="360" class="description"/>
+						<img srcset="./images/1one-desktop.jpg 1x, ./images/1one-desktop2x.jpg 2x"
+							 src="./images/1one-desktop.jpg" 
+							 alt="one-desktop" class="description"/>
 						<div class="overlay">
 							<p>DESKTOP APPS</p>
 						</div>
 					</li>
 					<li class="card-description-studio">
-						<img src="./images/2phone-and-apps.jpg" alt="phone-and-apps" width="360" class="description"/>
+						<img srcset="./images/2phone-and-apps.jpg 1x, ./images/2phone-and-apps2x.jpg 2x" 
+						     src="./images/2phone-and-apps.jpg" alt="phone-and-apps" class="description"/>
 						<div class="overlay">
 							<p>MOBILE APPS</p>
 						</div>
 					</li>
 					<li class="card-description-studio">
-						<img src="./images/3laptop-and-phone.jpg" alt="laptop-and-phone" width="360" class="description"/>
+						<img srcset="./images/3laptop-and-phone.jpg 1x, ./images/3laptop-and-phone2x.jpg 2x"
+							src="./images/3laptop-and-phone.jpg" alt="laptop-and-phone" class="description"/>
 						<div class="overlay">
 							<p>DESIGN SOLUTIONS</p>
 						</div>
@@ -113,7 +117,8 @@
 				<h2>Our Team</h2>
 				<ul class="cards-description">
 					<li class="description">
-						<img src="./images/4mark-guerrero.jpg" alt="mark-guerrero" width="264"/>
+						<img srcset="./images/4mark-guerrero.jpg 1x, ./images/4mark-guerrero2x.jpg 2x"
+							 src="./images/4mark-guerrero.jpg" alt="mark-guerrero"/>
 						<div class="card-description-studio">
 							<h3>Mark Guerrero</h3>
 							<h4>Product Designer</h4>
@@ -146,7 +151,8 @@
 						</div>
 					</li>
 					<li class="description">
-						<img src="./images/5tom-ford.jpg" alt="tom-ford" width="264"/>
+						<img  srcset="./images/5tom-ford.jpg 1x, ./images/5tom-ford2x.jpg 2x"
+							  src="./images/5tom-ford.jpg" alt="tom-ford"/>
 						<div class="card-description-studio">
 							<h3>Tom Ford</h3>
 							<h4>Frontend Developer</h4>
@@ -179,7 +185,8 @@
 						</div>
 					</li>
 					<li class="description">
-						<img src="./images/6camila-garcia.jpg" alt="camila-garcia" width="264"/>
+						<img  srcset="./images/6camila-garcia.jpg 1x, ./images/6camila-garcia2x.jpg 2x"
+							  src="./images/6camila-garcia.jpg" alt="camila-garcia"/>
 						<div class="card-description-studio">
 							<h3>Camila Garcia</h3>
 							<h4>Marketing</h4>
@@ -212,7 +219,8 @@
 						</div>
 					</li>
 					<li class="description">
-						<img src="./images/7daniel-wilson.jpg" alt="aniel-wilson" width="264"/>
+						<img  srcset="./images/7daniel-wilson.jpg 1x, ./images/7daniel-wilson2x.jpg 2x" 
+							  src="./images/7daniel-wilson.jpg" alt="aniel-wilson"/>
 						<div class="card-description-studio">
 							<h3>Daniel Wilson</h3>
 							<h4>UI Designer</h4>
@@ -371,7 +379,7 @@
 							<svg width="16" height="16">
 								<use href="./images/icons.svg#icon-unchecked"></use>
 							</svg>
-							<input type="checkbox" name="policy" id="privacy_policy" value="checked" hidden/>
+							<input type="checkbox" name="policy" id="privacy_policy" value="checked"/>
 							<span class="check_color"></span> 
 							<p>I accept the terms and conditions of the <a href="#">Privacy Policy</a></p>
 						</label>
@@ -384,6 +392,10 @@
 
 			</form>
 		</div>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      				integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      				crossorigin="anonymous"></script>
+    	<script defer src="js/mobile-menu.js"></script>
 		<script src="./JS/modal.js"></script>
 	<!-- Modal -->
 	</body>
