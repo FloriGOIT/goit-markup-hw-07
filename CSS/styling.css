@@ -36,10 +36,10 @@ p {
 
 .container {padding-left: 15px;
 						padding-right: 15px;
-						margin-left: auto;
-						margin-right: auto;}
+						margin:0 auto;}
 .section {padding-top:96px;
-              padding-bottom: 96px;}
+          padding-bottom: 96px;
+          margin:0 auto;}
 
 
 /* HEADER */              
@@ -73,17 +73,15 @@ p {
 
 /*navigation-address navigation-menu*/
 .navigation-menu {
-  padding-left: 76px;
   max-width: 335px;
   margin: 0px;
-  display: none;
 }
 
 .navigation-menu .navigation-pages {
   display: flex;
   flex-direction: row;
   column-gap: 40px;
-  margin-top: 32px;
+  margin-top: 22px;
   margin-bottom: 0px;
   letter-spacing: 0.0212em;
 }
@@ -117,14 +115,11 @@ p {
 }
 /*navigation-address header-address*/
 .header-address {
-  display: none;
   flex-direction: row;
   align-items: center;
   column-gap: 40px;
-  padding-left: 306px;
   letter-spacing: 0.0215em;
   margin: 0px;
-  font: var(--ro400-s16-lh24);
   color: #434455;
 }
 .header-address li {
@@ -182,27 +177,11 @@ p {
 /*end common CSS */
 
 /*main-webstudio heading*/
-.heading {min-width: 428px;
-	        box-sizing: border-box;
-	        background-image: linear-gradient(to bottom,rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-		      url("../images/people-office-mobile1x-428-432.png");
-	        background-size: 428px 432px;
-	        background-repeat: no-repeat;
-	        background-size: cover;}
-@media (min-device-pixel-ratio: 2),
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi),
-	(min-resolution: 2dppx) {.heading {background-image: linear-gradient(to bottom,
-			                            	rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-			                              url("../images/people-office-mobile2x.png");}} 
 
 .heading .first-header {box-sizing: box;
-                      font: var(--second-heading);
                       color: white;
                       text-align: center;
-                      margin: 0 auto;
-                      min-width: 428px;
-	                    padding: 112px 52px;}
+                      margin: 0 auto;}
 
 .heading .order-service-button {
   box-sizing: border-box;
@@ -216,7 +195,6 @@ p {
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	margin-top: 72px;
 }
 
 .heading .order-service-button:hover {
@@ -232,20 +210,12 @@ p {
                                                 gap: 30px;
                                                 margin-top: 0px;
                                                 margin-bottom: 0px;}
-.main-webstudio .advantages .cards-description .description .card-description-studio h3
-{font: var(--second-heading);
-margin-top: 20px;}
-.main-webstudio .advantages svg {min-width: 396px;
-height: 112px;}
+
+.main-webstudio .advantages svg {height: 112px;}
 
 .main-webstudio .advantages svg rect {width: 100%;
-height: 100%;
-fill:#F4F4FD;}
-.main-webstudio .advantages svg rect use {align-items: center;}
-
-.main-webstudio .advantages .cards-description .description .card-description-studio h4
-{font: var(--ro500-s16-lh24);
-margin-top: 5px;}
+                                      height: 100%;
+                                      fill:#F4F4FD;}
 
 /*main-webstudio business-info*/
 .main-webstudio .business-info {display: none;}
@@ -311,9 +281,8 @@ margin-top: 5px;}
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
 }
-.main-webstudio .team ul{padding: 0px 67px;
-                         margin-top: 0px;
-                         margin-bottom: 0px;}
+.main-webstudio .team ul{ margin-top: 0px;
+                          margin-bottom: 0px;}
 
 .main-webstudio .team ul li .card-description-studio .icons-body {
   display: flex;
@@ -335,10 +304,10 @@ margin-top: 5px;}
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: center;
- column-gap: 16px;
+ row-gap: 72px;
  margin-top: 0px;
  margin-bottom: 0px;}
-.main-webstudio .clients .icons-body svg{width:170px;}
+.main-webstudio .clients .icons-body svg {height: 88px;}
 .main-webstudio .clients .icons-body .logo-customers {
   transition-property: fill;
   transition-duration: 250ms;
@@ -358,6 +327,8 @@ margin-top: 5px;}
 .main-webstudio .clients .icons-body .logo-customers rect:hover {
   stroke: var(--color-iris);
 } /*transition*/
+
+
 /*PORTOFOLIO*/
 /*main-portofolio page-buttons*/
 .main-portofolio page-buttons {
@@ -479,16 +450,14 @@ margin-top: 5px;}
   align-items:center;
   background-color: var(--main-color);
   letter-spacing: 0.03em;
-  text-align: center;
-  gap: 72px;
-}
+  row-gap: 72px;}
+
 .footer .social .list-icons {
   display: flex;
   flex-direction: row;
   padding: 0px;
-  margin: 0px;
-  justify-content: space-between;
-}
+  gap: 16px;
+  justify-content: space-between;}
 
 .icon circle {
   transition-property: fill;
@@ -536,12 +505,7 @@ margin-top: 5px;}
   font: var(--ro500-s16-lh24);
   margin-bottom: 16px;
 }
-.footer .social .list-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  margin-bottom: 0;
-}
+
 
 .icons-footer circle {
   transition-property: color, background-color, box-shadow;
@@ -569,18 +533,13 @@ margin-top: 5px;}
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-.email-footer fieldset div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
+
 .email-footer .subscribe-container input {
-  width: 80%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--main-color);
   outline-color: var(--main-color);
-  margin-bottom: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -790,15 +749,111 @@ margin-top: 5px;}
 @media screen and (min-width: 428px) 
 {
   .container {width: 428px;}
+  .navigation-menu {display: none;}
+  .header-address {display: none;}
+  .heading {padding: 112px 52px;
+          min-width: 428px;
+          box-sizing: border-box;
+          background-image: linear-gradient(to bottom,rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+          url("../images/people-office-mobile1x-428-432.png");
+          background-size: 428px 432px;
+          background-repeat: no-repeat;
+          background-size: cover;}
+          @media (min-device-pixel-ratio: 2),
+                  (-webkit-min-device-pixel-ratio: 2),
+                  (min-resolution: 192dpi),
+                  (min-resolution: 2dppx) {.heading {background-image: linear-gradient(to bottom,
+                                                rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                                                url("../images/people-office-mobile2x.png");}}
+  .heading .first-header {font: var(--second-heading);}
+  .heading .order-service-button {margin-top: 72px;}
+  .main-webstudio .advantages svg {width: 396px;}
+  .main-webstudio .advantages .cards-description .description .card-description-studio h3
+      {font: var(--second-heading);
+        margin-top: 5px;}
+  .main-webstudio .advantages .cards-description .description .card-description-studio h4
+      {font: var(--ro500-s16-lh24);
+      margin-top: 20px;}
+  .main-webstudio .team ul{padding: 0px 67px;}
+  .main-webstudio .clients .icons-body svg {width:190px;}
+  .main-webstudio .clients .icons-body svg rect {width:190px;}
+  .main-webstudio .clients .icons-body {column-gap: 16px;}
+  .footer {text-align: center;}
+  .email-footer fieldset div {align-items: center;
+                              display: flex;
+                              flex-direction: column;}
+.email-footer .subscribe-container input {width: 80%;
+                                          margin-bottom: 16px;}
+
+                                      
 }
 
-@media screen and (min-width: 768x) 
+@media screen and (min-width: 768px) 
 {
   .container {width: 768px;}
+  .navigation-menu {display: block;}
+  .header-address {display: block;
+                  font: var(--ro400-s12-lh24);}
+  .navigation-address {padding-top: 0px;
+                       padding-bottom: 0px;
+                      display: flex;
+                      flex-direction: row;
+                      gap: 120px;}
   .navigation-address .mobile-menu {display: none;}
   .navigation-address .navigation-menu .navigation-pages {display: flex;
                                                       flex-direction: row;}
-  
+  .heading {padding: 112px 136px;
+            box-sizing: border-box;
+            background-image: linear-gradient(to bottom,rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+            url("../images/people-office-tablet1x.png.png");
+            background-size: 768px 436px;
+            background-repeat: no-repeat;
+            background-size: cover;}
+  @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) 
+            {.heading {background-image: linear-gradient(to bottom,
+                                        rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                                        url("../images/people-office-tablet2x.png");}} 
+  .heading .first-header {font: var(--first-heading);} 
+  .heading .order-service-button {margin-top: 36px;}
+  .main-webstudio  .advantages .cards-description {display: flex;
+                                                  flex-direction: row;
+                                                  flex-wrap: wrap;
+                                                  }
+  .main-webstudio  .advantages .cards-description li {width: 354px;}
+  .main-webstudio .advantages svg {width: 354px;}
+  .main-webstudio .advantages .cards-description .description .card-description-studio h3
+      {font: var(--second-heading);
+        margin-top: 5px;
+        justify-content: flex-start;}
+  .main-webstudio .advantages .cards-description .description .card-description-studio h4
+      {font: var(--ro500-s16-lh24);
+      margin-top: 20px;
+      text-align: start;}
+  .main-webstudio .team ul {display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            gap:30px;
+                            padding: 0px 90px;}
+  .main-webstudio .clients .icons-body svg {width:170px;}
+  .main-webstudio .clients .icons-body svg rect {width:170px;}
+  .main-webstudio .clients .icons-body {column-gap: 24px;}
+  .footer {display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 24px;
+          padding:96px 108px;
+          text-align: start;
+          align-items: center;}
+  .footer .social .list-icons {margin-block-end:0px;
+                              padding-bottom: 20px;}
+.email-footer fieldset div {display: flex;
+                          flex-direction: row;
+                          gap:24px}
+.email-footer .subscribe-container input {width: 100%;
+                                          margin-bottom: 0px;}
 
 }
 
@@ -808,11 +863,12 @@ margin-top: 5px;}
   .container {width: 1158px;}
   .navigation-address .navigation-menu .navigation-pages {display: flex;
     flex-direction: row;}
-  .header-address {display: flex;}
+  .header-address {display: flex;
+                  font: var(--ro400-s16-lh24);}
   .heading {
     box-sizing: border-box;
     max-width: 1440px;
-    padding: 188px 472px;
+    padding: 118px 472px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -833,4 +889,16 @@ margin-top: 5px;}
         ),
         url("../images/people-office-2880x1200-2x.png");}
             }
+    .heading .first-header {font: var(--first-heading);}
+    .heading .order-service-button {margin-top: 48px;}
+    .main-webstudio .advantages svg {width: 264px;}
+    .main-webstudio .advantages .cards-description .description .card-description-studio h3
+        {font: var(--ro500-s20-lh24);
+          margin-top: 5px;}
+    .main-webstudio .advantages .cards-description .description .card-description-studio h4
+        {font: var(--ro400-s16-lh24);
+        margin-top: 20px;}
+    .main-webstudio .clients .icons-body svg {width:170px;}
+    .main-webstudio .clients .icons-body svg rect {width:170px;}
+    .main-webstudio .clients .icons-body {column-gap: 24px;}
 }

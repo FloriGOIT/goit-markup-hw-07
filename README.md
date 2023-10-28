@@ -78,3 +78,63 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.advantages {
+  padding-top: 120px;
+}
+
+<use href="./images/icons.svg#icon-comp" width="64" height="64" x="102" y="24"></use>
+.card-description-studio h4 {
+  font: var(--ro500-s16-lh24);
+  color: #434455;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  letter-spacing: 0.02em;
+}
+.clients .icons-body {
+flex
+}
+.footer .social {
+  padding-bottom: 132px;
+  margin-left: 120px;
+}
+.email-footer {
+  margin-left: 80px;
+  padding-bottom: 132px;
+  width: 453px;
+}
+
+.email-footer .subscribe-container input {
+  width: 264px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--main-color);
+  margin-right: 24px;
+  outline-color: var(--main-color);
+}
+.footer .logo-descriprion {
+  padding-bottom: 100px;
+}
+
+.footer .social {
+  padding-bottom: 132px;
+
+}
+.email-footer {
+  padding-bottom: 132px;
+  width: 453px;
+}
+.header-address {
+  flex-direction: row;
+  align-items: center;
+  column-gap: 40px;
+  padding-left: 306px;
+  letter-spacing: 0.0215em;
+  margin: 0px;
+  font: var(--ro400-s16-lh24);
+  color: #434455;
+}
