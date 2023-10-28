@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
- 
   width: 100vw;
 }
 
@@ -71,7 +70,7 @@ p {
 			url("../images/people-office-mobile2x.png");
 	}
 }
-}
+
 /*HEADER 2.LOGO decoration*/
 .menu-mobile {display: flex;
 							flex-direction: row;
@@ -99,6 +98,8 @@ p {
 /*NAV decoration*/
 
 .navigation-address {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,13 +149,8 @@ p {
   margin-top: 20px;
 }
 
-.section {
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
-.advantages {
-  padding-top: 120px;
-}
+.section {padding-top:96px;
+          padding-bottom: 96px;}
 
 /*HEADER 3.ADDRESS decoration*/
 .header-address {
@@ -234,6 +230,23 @@ p {
 }
 
 /*MENU*/
+.advantages .cards-description {display: flex;
+                                gap: 30px;}
+.advantages .cards-description .description .card-description-studio h3
+{font: var(--second-heading);
+  margin-top: 20px;}
+.advantages svg {min-width: 396px;
+                 height: 112px;}
+
+.advantages svg rect {width: 100%;
+                      height: 100%;
+                      fill:#F4F4FD;}
+.advantages svg rect use {align-items: center;}
+
+.advantages .cards-description .description .card-description-studio h4
+{font: var(--ro500-s16-lh24);
+margin-top: 5px;}
+
 .cards-description {
   display: flex;
   flex-direction: column;
@@ -273,6 +286,8 @@ p {
 }
 
 /*ALL-BUTTON description*/
+.card-description-studio:not(:last-child) {margin-bottom: 30px;}
+.business-info {display: none;}
 
 .card-description-studio,
 .card-description-portofolio {
@@ -360,24 +375,19 @@ p {
   color: white;
 }
 
-.card-description-studio h3 {
-  font: var(--ro500-s20-lh24);
+
+.card-description-studio h3 {display:flex;
   color: var(--main-color);
-  margin-top: 0px;
   margin-bottom: 0px;
   letter-spacing: 0.02em;
+  justify-content: center;
+  padding-top: 2px;
 }
 
 .card-description-studio h4 {
-  font: var(--ro400-s16-lh24);
+  font: var(--ro500-s16-lh24);
   color: #434455;
-  margin-top: 8px;
-  margin-bottom: 7px;
   letter-spacing: 0.02em;
-}
-
-.team {
-  background-color: #f4f4fd;
 }
 
 .card-description-portofolio h3 {
@@ -394,16 +404,25 @@ p {
   margin-bottom: 0px;
 }
 
+
+.team .card-description-studio h3 {font: var(--ro500-s20-lh24);}
+.team .card-description-studio h4 {font: var(--ro400-s16-lh24);}
+
+
 .team {
   background-color: #f4f4fd;
 }
-
+.team .description {margin-top: 72px;}
 .team .card-description-studio h4 {
   margin-top: 8px;
 }
 
+
 .team .card-description-studio {
-  padding: 30px 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   border-top: 0px;
@@ -417,22 +436,20 @@ p {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
 }
-.team .card-description-studio .icons-body li {
-  gap: 12px;
-}
-.team .card-description-studio .icons-body {
+.team ul{padding: 0px 67px;}
+
+.team ul li .card-description-studio .icons-body {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 10px;
   padding-left: 16px;
   padding-right: 16px;
-}
-.icons-body {
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  margin: 0px;
   justify-content: center;
   fill: #afb1b8;
 }
-
+.team ul li .card-description-studio .icons-body svg { width: 44px;
+                                                        height: 44px;}
 .business-info h2,
 .team h2,
 .clients h2 {
@@ -440,7 +457,6 @@ p {
   font: var(--second-heading);
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 72px;
 }
 
 .list-icons {
@@ -491,18 +507,26 @@ p {
   stroke: var(--color-iris);
 } /*transition*/
 
+.clients h2 {margin-bottom: 72px;}
 .clients .icons-body {
-  gap: 30px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ column-gap: 16px;
 }
+
+.clients .icons-body svg{min-width:168px;
+                         max-width: 190px;}
 
 /*FOOTER*/
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 100px;
+  align-items:center;
   background-color: var(--main-color);
   letter-spacing: 0.03em;
+  text-align: center;
+  gap: 72px;
 }
 
 .logo-web {
@@ -521,6 +545,7 @@ p {
   margin-bottom: 0px;
   margin-top: 16px;
   width: 264px;
+  text-align:justify;
 }
 .footer h5 {
   color: white;
@@ -530,15 +555,8 @@ p {
 .footer .social .list-icons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 16px;
   margin-bottom: 0;
-}
-.footer .logo-descriprion {
-  padding-bottom: 100px;
-}
-.footer .social {
-  padding-bottom: 132px;
-  margin-left: 120px;
 }
 
 .icons-footer circle {
@@ -553,8 +571,6 @@ p {
 } /*transition*/
 
 .email-footer {
-  margin-left: 80px;
-  padding-bottom: 132px;
   width: 453px;
 }
 .email-footer fieldset {
@@ -572,20 +588,23 @@ p {
 .email-footer fieldset div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .email-footer .subscribe-container input {
-  width: 264px;
-  padding: 10px 16px;
+  width: 90%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--main-color);
-  margin-right: 24px;
   outline-color: var(--main-color);
+  margin-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .subscribe-container input::placeholder {
   color: rgba(255, 255, 255, 0.3);
   font: var(--ro400-s12-lh24);
   letter-spacing: 0.04em;
+  padding-left: 10px;
 }
 .email-footer .email-subscribe {
   display: flex;
@@ -784,13 +803,19 @@ p {
   }
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 428px) 
+{
+  .container {width: 428px;}
 }
 
-@media screen and (min-width: 768x) {
+@media screen and (min-width: 768x) 
+{
+  .container {width: 768px;}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) 
+{
+  .container {width: 1158px;}
   .navigation-pages {
     display: flex;
   }
