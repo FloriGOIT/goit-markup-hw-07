@@ -50,7 +50,8 @@ p {
 .navigation-address {
   display: flex;
   flex-direction: row;
-  align-items: center;}
+  align-items: center;
+  justify-content: center;}
   
 /*navigation-address logo*/
 .navigation-address .logo {
@@ -80,6 +81,7 @@ p {
 .navigation-menu .navigation-pages {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   column-gap: 40px;
   margin-top: 22px;
   margin-bottom: 0px;
@@ -116,6 +118,7 @@ p {
 /*navigation-address header-address*/
 .header-address {
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   column-gap: 40px;
   letter-spacing: 0.0215em;
@@ -125,6 +128,7 @@ p {
 .header-address li {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 0;
@@ -748,7 +752,7 @@ footer {background-color: var(--main-color);
   .navigation-menu {display: none;}
   .header-address {display: none;}
   .heading {padding: 112px 52px;
-          min-width: 428px;
+          min-width: 300px;
           box-sizing: border-box;
           background-image: linear-gradient(to bottom,rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
           url("../images/people-office-mobile1x-428-432.png");
@@ -770,7 +774,8 @@ footer {background-color: var(--main-color);
                                 padding-bottom: 96px;}
   .main-webstudio .advantages svg {width: 100%;
         height: 112px;}
-  .main-webstudio  .advantages .cards-description {flex-direction:column;
+  .main-webstudio  .advantages .cards-description {flex-direction:row;
+                                                    flex-wrap: wrap;
                                                     justify-content: center;
                                                     gap:35px;}
   .main-webstudio  .advantages .cards-description li {width: 396px;}
