@@ -776,7 +776,7 @@ footer {background-color: var(--main-color);
   .main-webstudio  .advantages .cards-description {flex-direction:column;
                                                     justify-content: center;
                                                     gap:35px;}
-  .main-webstudio  .advantages .cards-description {width: 396px;}
+  .main-webstudio  .advantages .cards-description li {width: 396px;}
   
   .main-webstudio .advantages .cards-description .description .card-description-studio h3
       {font: var(--second-heading);}
