@@ -15,6 +15,7 @@ h4,
 h5,
 p {
   margin: 0px;
+  margin-block-start:0px;
 }
 
 :root {
@@ -34,23 +35,21 @@ p {
   --second-heading: normal normal 700 36px/40px Roboto, sans-serif;
 }
 
-.container {padding-left: 15px;
-						padding-right: 15px;
-						margin:0 auto;}
-.section {padding-top:96px;
-          padding-bottom: 96px;
-          margin:0 auto;}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {margin:0 auto;}
 
 
 /* HEADER */              
 /*navigation-address*/
 .navigation-address {
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-	justify-content: space-between;}
+  align-items: center;}
   
 /*navigation-address logo*/
 .navigation-address .logo {
@@ -178,23 +177,22 @@ p {
 
 /*main-webstudio heading*/
 
-.heading .first-header {box-sizing: box;
-                      color: white;
-                      text-align: center;
-                      margin: 0 auto;}
+.heading .first-header {color: white;
+                        text-align: center;
+                        margin: 0 auto;}
 
-.heading .order-service-button {
-  box-sizing: border-box;
-  font: var(--ro500-s16-lh24);
-  background-color: var(--color-iris);
-  color: white;
-  cursor: pointer;
-  padding: 16px 32px 16px 32px;
-  border-width: 0px;
-	border-radius: 4px;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.heading .order-service-button {box-sizing: border-box;
+                                
+                                  font: var(--ro500-s16-lh24);
+                                  background-color: var(--color-iris);
+                                  color: white;
+                                  cursor: pointer;
+                                  padding: 16px 32px 16px 32px;
+                                  border-width: 0px;
+                                  border-radius: 8px;
+                                  transition-property: color, background-color, box-shadow;
+                                  transition-duration: 250ms;
+                                  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heading .order-service-button:hover {
@@ -206,8 +204,6 @@ p {
 
 /*main-webstudio advantages*/
 .main-webstudio  .advantages .cards-description {display: flex;
-                                                flex-direction: column;
-                                                gap: 30px;
                                                 margin-top: 0px;
                                                 margin-bottom: 0px;}
 
@@ -218,7 +214,10 @@ p {
                                       fill:#F4F4FD;}
 
 /*main-webstudio business-info*/
-.main-webstudio .business-info {display: none;}
+
+.main-webstudio .business-info ul {display: flex;
+                                   flex-direction: row;
+                                   gap: 24px;}
 
 .main-webstudio .business-info li {
   position: relative;
@@ -258,14 +257,13 @@ p {
 .main-webstudio .team {
   background-color: #f4f4fd;
 }
-.main-webstudio .team .description {margin-top: 72px;}
-.main-webstudio .team .card-description-studio h4 {
+
+.main-webstudio .team ul li .card-description-studio h4 {
   margin-top: 8px;
 }
-
-.main-webstudio .team .card-description-studio {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.main-webstudio .team ul li .card-description-studio {
+  padding-top: 28px;
+  padding-bottom: 29px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -282,20 +280,21 @@ p {
     0px 1px 6px 0px #2e2f4214;
 }
 .main-webstudio .team ul{ margin-top: 0px;
-                          margin-bottom: 0px;}
+                          margin-bottom: 0px;
+                          display: flex;}
+.main-webstudio .team ul li {width: 264px;}
 
 .main-webstudio .team ul li .card-description-studio .icons-body {
   display: flex;
   flex-direction: row;
-  gap: 3px;
-  margin-left: 10px;
-  padding-left: 16px;
-  padding-right: 16px;
   justify-content: center;
-  fill: #afb1b8;
+  gap:24px;
+  margin-top: 8px;
+  fill:rgba(175, 177, 184, 1);
 }
-.main-webstudio .team ul li .card-description-studio .icons-body svg { width: 44px;
-                                                        height: 44px;}
+.main-webstudio .team ul li .card-description-studio .icons-body svg { width: 40px;
+                                                        height: 40px;
+                                                        margin-top:0px;}
 
 /*main-webstudio clients*/
 .main-webstudio .clients h2 {margin-bottom: 72px;}
@@ -442,15 +441,11 @@ p {
   margin-top: 8px;
   margin-bottom: 0px;
 }
+/* end PORTOFOLIO*/
 
 /*FOOTER*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  background-color: var(--main-color);
-  letter-spacing: 0.03em;
-  row-gap: 72px;}
+footer {background-color: var(--main-color);
+        color: rgba(244, 244, 253, 1);}
 
 .footer .social .list-icons {
   display: flex;
@@ -493,7 +488,7 @@ p {
 
 .footer-description {
   font: var(--ro400-s16-lh24);
-  color: #f4f4fd;
+  color: rgba(244, 244, 253, 1);
   letter-spacing: 0.02em;
   margin-bottom: 0px;
   margin-top: 16px;
@@ -501,7 +496,6 @@ p {
   text-align:justify;
 }
 .footer h5 {
-  color: white;
   font: var(--ro500-s16-lh24);
   margin-bottom: 16px;
 }
@@ -518,9 +512,6 @@ p {
   fill: var(--color-iris);
 } /*transition*/
 
-.email-footer {
-  width: 453px;
-}
 .email-footer fieldset {
   border: none;
   padding: 0px;
@@ -528,7 +519,6 @@ p {
   margin-right: 0px;
 }
 .email-footer fieldset legend {
-  color: white;
   font: var(--ro500-s16-lh24);
   letter-spacing: 0.02em;
   margin-bottom: 16px;
@@ -769,20 +759,26 @@ p {
   .heading .order-service-button {margin-top: 72px;}
   .main-webstudio .advantages svg {width: 396px;}
   .main-webstudio .advantages .cards-description .description .card-description-studio h3
-      {font: var(--second-heading);
-        margin-top: 5px;}
+      {font: var(--second-heading);}
   .main-webstudio .advantages .cards-description .description .card-description-studio h4
-      {font: var(--ro500-s16-lh24);
-      margin-top: 20px;}
-  .main-webstudio .team ul{padding: 0px 67px;}
+      {font: var(--ro500-s16-lh24);}
+  .main-webstudio .business-info {display: none;}
+  .main-webstudio .team ul{padding: 0px 67px;
+                           flex-direction: column;}
   .main-webstudio .clients .icons-body svg {width:190px;}
   .main-webstudio .clients .icons-body svg rect {width:190px;}
   .main-webstudio .clients .icons-body {column-gap: 16px;}
-  .footer {text-align: center;}
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    letter-spacing: 0.03em;
+    row-gap: 72px;
+    text-align: center;}
   .email-footer fieldset div {align-items: center;
                               display: flex;
                               flex-direction: column;}
-.email-footer .subscribe-container input {width: 80%;
+  .email-footer .subscribe-container input {width: 80%;
                                           margin-bottom: 16px;}
 
                                       
@@ -791,14 +787,17 @@ p {
 @media screen and (min-width: 768px) 
 {
   .container {width: 768px;}
-  .navigation-menu {display: block;}
+  .section {padding-top:120px;
+            padding-bottom: 120px;}
+  .navigation-menu {display: block;
+                    margin-left: 120px;}
   .header-address {display: block;
-                  font: var(--ro400-s12-lh24);}
+                  font: var(--ro400-s12-lh24);
+                  margin-left: 120px;}
   .navigation-address {padding-top: 0px;
                        padding-bottom: 0px;
-                      display: flex;
-                      flex-direction: row;
-                      gap: 120px;}
+                       display: flex;
+                       flex-direction: row;}
   .navigation-address .mobile-menu {display: none;}
   .navigation-address .navigation-menu .navigation-pages {display: flex;
                                                       flex-direction: row;}
@@ -832,6 +831,8 @@ p {
       {font: var(--ro500-s16-lh24);
       margin-top: 20px;
       text-align: start;}
+  .main-webstudio .business-info {display: none;}
+  .main-webstudio .business-info ul {margin-top: 72px;}
   .main-webstudio .team ul {display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
@@ -849,56 +850,82 @@ p {
           align-items: center;}
   .footer .social .list-icons {margin-block-end:0px;
                               padding-bottom: 20px;}
-.email-footer fieldset div {display: flex;
-                          flex-direction: row;
-                          gap:24px}
-.email-footer .subscribe-container input {width: 100%;
+  .email-footer fieldset div {display: flex;
+                          flex-direction: row;}
+  .email-footer .subscribe-container input {width: 100%;
                                           margin-bottom: 0px;}
 
 }
 
 @media screen and (min-width: 1200px) 
-{
-  .navigation-address .mobile-menu {display: none;}
-  .container {width: 1158px;}
+{ .container {width: 1158px;
+  padding-left: 0px;
+  padding-right: 0px;}
+  .navigation-address {padding-top: 2px;}
+  .navigation-menu {display: block;
+                    margin-left: 76px;}
+  
   .navigation-address .navigation-menu .navigation-pages {display: flex;
     flex-direction: row;}
   .header-address {display: flex;
-                  font: var(--ro400-s16-lh24);}
-  .heading {
-    box-sizing: border-box;
-    max-width: 1440px;
-    padding: 118px 472px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office-1440x600-1x.png");
-    background-size: 1440px 600px;
-    background-repeat: no-repeat;}
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .heading {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/people-office-2880x1200-2x.png");}
-            }
-    .heading .first-header {font: var(--first-heading);}
-    .heading .order-service-button {margin-top: 48px;}
+                  font: var(--ro400-s16-lh24);
+                  margin-left: 316px;}
+ .navigation-address .mobile-menu {display: none;}
+
+  .heading {text-align: center;
+            max-width: 100%;
+            background-image: linear-gradient(
+                to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+              ),
+              url("../images/people-office-1440x600-1x.png");
+            background-size: cover;
+            background-repeat: no-repeat;}
+          @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .heading {
+              background-image: linear-gradient(
+                  to bottom,
+                  rgba(46, 47, 66, 0.7),
+                  rgba(46, 47, 66, 0.7)
+                ),
+                url("../images/people-office-2880x1200-2x.png");}
+                    }
+    .heading .first-header {font: var(--first-heading);
+                            margin-top: 76px;}
+    .heading .order-service-button {margin-top: 48px;
+                                    margin-bottom: 76px;}
+    .main-webstudio  .advantages {padding-bottom: 0px;}
+    .main-webstudio  .advantages .cards-description {flex-direction:row;
+                                                     gap: 24px;}
+    .main-webstudio  .advantages .cards-description li {width: 264px;}
     .main-webstudio .advantages svg {width: 264px;}
     .main-webstudio .advantages .cards-description .description .card-description-studio h3
         {font: var(--ro500-s20-lh24);
-          margin-top: 5px;}
+          margin-top: 0px;}
     .main-webstudio .advantages .cards-description .description .card-description-studio h4
         {font: var(--ro400-s16-lh24);
-        margin-top: 20px;}
+        margin-top: 10px;}
+
+    .main-webstudio .business-info {display: block;}
+    
+    .main-webstudio .team ul {display: flex;
+                              flex-direction: row;
+                              flex-wrap: nowrap;
+                              gap: 24px;
+                              margin-top: 72px;
+                              padding: 0px;}
+
     .main-webstudio .clients .icons-body svg {width:170px;}
     .main-webstudio .clients .icons-body svg rect {width:170px;}
     .main-webstudio .clients .icons-body {column-gap: 24px;}
+    .footer {display: flex;
+             flex-direction: row;
+             gap: 115px;}
+    .email-footer {width: 453px;
+                   margin-bottom: 20px;}
+.email-footer .email-subscribe {margin-left: 15px;}
 }
