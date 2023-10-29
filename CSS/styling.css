@@ -40,6 +40,7 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 .section {margin:0 auto;}
 
@@ -176,13 +177,16 @@ p {
 /*end common CSS */
 
 /*main-webstudio heading*/
+.heading {display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;}
 
 .heading .first-header {color: white;
                         text-align: center;
                         margin: 0 auto;}
 
 .heading .order-service-button {box-sizing: border-box;
-                                
                                   font: var(--ro500-s16-lh24);
                                   background-color: var(--color-iris);
                                   color: white;
@@ -193,7 +197,7 @@ p {
                                   transition-property: color, background-color, box-shadow;
                                   transition-duration: 250ms;
                                   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+                                  margin: 0 auto;}
 
 .heading .order-service-button:hover {
   color: var(--color-iris); /*transition*/
@@ -216,7 +220,6 @@ p {
 /*main-webstudio business-info*/
 
 .main-webstudio .business-info ul {display: flex;
-                                   flex-direction: row;
                                    gap: 24px;}
 
 .main-webstudio .business-info li {
@@ -251,6 +254,7 @@ p {
   color: white;}
 
 /*main-webstudio team*/
+.main-webstudio .team h2 {margin-bottom: 72px;}
 .main-webstudio .team .card-description-studio h3 {font: var(--ro500-s20-lh24);}
 .main-webstudio .team .card-description-studio h4 {font: var(--ro400-s16-lh24);}
 
@@ -282,19 +286,19 @@ p {
 .main-webstudio .team ul{ margin-top: 0px;
                           margin-bottom: 0px;
                           display: flex;}
-.main-webstudio .team ul li {width: 264px;}
 
-.main-webstudio .team ul li .card-description-studio .icons-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap:24px;
-  margin-top: 8px;
-  fill:rgba(175, 177, 184, 1);
-}
-.main-webstudio .team ul li .card-description-studio .icons-body svg { width: 40px;
-                                                        height: 40px;
-                                                        margin-top:0px;}
+
+.main-webstudio .team ul li .card-description-studio .icons-body {display: flex;
+                                                                  flex-direction: row;
+                                                                  justify-content: center;
+                                                                  gap:24px;
+                                                                  margin-top: 8px;
+                                                                  fill:rgba(175, 177, 184, 1);
+                                                                  padding-left: 0px;
+                                                                  padding-right: 0px;}
+.main-webstudio .team ul li .card-description-studio .icons-body svg {width: 40px;
+                                                                    height: 40px;
+                                                                    margin-top:0px;}
 
 /*main-webstudio clients*/
 .main-webstudio .clients h2 {margin-bottom: 72px;}
@@ -306,6 +310,8 @@ p {
  row-gap: 72px;
  margin-top: 0px;
  margin-bottom: 0px;}
+
+.main-webstudio .clients li{height: 88px;}
 .main-webstudio .clients .icons-body svg {height: 88px;}
 .main-webstudio .clients .icons-body .logo-customers {
   transition-property: fill;
@@ -737,7 +743,9 @@ footer {background-color: var(--main-color);
 }
 
 @media screen and (min-width: 428px) 
-{
+{ .navigation-address {justify-content: space-between;
+                       padding-bottom: 15px;
+                       padding-top: 15px;}
   .container {width: 428px;}
   .navigation-menu {display: none;}
   .header-address {display: none;}
@@ -756,30 +764,52 @@ footer {background-color: var(--main-color);
                                                 rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
                                                 url("../images/people-office-mobile2x.png");}}
   .heading .first-header {font: var(--second-heading);}
-  .heading .order-service-button {margin-top: 72px;}
+  .heading .order-service-button {margin-top: 72px;
+                                  margin-left: auto;
+                                  margin-right: auto;}
+
+  .main-webstudio  .advantages {padding-top: 96px;
+                                padding-bottom: 96px;}
+  .main-webstudio  .advantages .cards-description {flex-direction:column;
+                                                    align-items:center;
+                                                    justify-content: center;
+                                                    gap:35px;}
+  .main-webstudio  .advantages .cards-description li {width: 396px;}
   .main-webstudio .advantages svg {width: 396px;}
   .main-webstudio .advantages .cards-description .description .card-description-studio h3
       {font: var(--second-heading);}
   .main-webstudio .advantages .cards-description .description .card-description-studio h4
       {font: var(--ro500-s16-lh24);}
+
   .main-webstudio .business-info {display: none;}
-  .main-webstudio .team ul{padding: 0px 67px;
-                           flex-direction: column;}
+
+  .main-webstudio .team {padding-top: 96px;
+                         padding-bottom: 96px;}
+  .main-webstudio .team ul{flex-direction: column;
+                          align-items: center;
+                          gap: 72px;}
+  
+  .main-webstudio .clients {padding-top: 96px;
+                            padding-bottom: 96px;}
   .main-webstudio .clients .icons-body svg {width:190px;}
   .main-webstudio .clients .icons-body svg rect {width:190px;}
   .main-webstudio .clients .icons-body {column-gap: 16px;}
+
   .footer {
     display: flex;
     flex-direction: column;
     align-items:center;
     letter-spacing: 0.03em;
     row-gap: 72px;
-    text-align: center;}
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 96px;}
   .email-footer fieldset div {align-items: center;
                               display: flex;
                               flex-direction: column;}
-  .email-footer .subscribe-container input {width: 80%;
-                                          margin-bottom: 16px;}
+  .email-footer {width:100%;}
+  .email-footer .subscribe-container input {width: 100%;
+                                            margin-bottom: 16px;}
 
                                       
 }
@@ -787,8 +817,8 @@ footer {background-color: var(--main-color);
 @media screen and (min-width: 768px) 
 {
   .container {width: 768px;}
-  .section {padding-top:120px;
-            padding-bottom: 120px;}
+  .section {padding-top:0px;
+            padding-bottom: 0px;}
   .navigation-menu {display: block;
                     margin-left: 120px;}
   .header-address {display: block;
@@ -817,11 +847,17 @@ footer {background-color: var(--main-color);
                                         url("../images/people-office-tablet2x.png");}} 
   .heading .first-header {font: var(--first-heading);} 
   .heading .order-service-button {margin-top: 36px;}
-  .main-webstudio  .advantages .cards-description {display: flex;
+
+  .main-webstudio .advantages h2{margin-bottom: 72px;}
+  .main-webstudio .advantages {padding-top: 96px;
+                                padding-bottom: 96px;}
+  .main-webstudio .advantages .cards-description {display: flex;
                                                   flex-direction: row;
                                                   flex-wrap: wrap;
-                                                  }
-  .main-webstudio  .advantages .cards-description li {width: 354px;}
+                                                  justify-content:center;
+                                                  align-items: center;
+                                                  gap: 25px;}
+  .main-webstudio .advantages .cards-description li {width: 354px;}
   .main-webstudio .advantages svg {width: 354px;}
   .main-webstudio .advantages .cards-description .description .card-description-studio h3
       {font: var(--second-heading);
@@ -832,12 +868,18 @@ footer {background-color: var(--main-color);
       margin-top: 20px;
       text-align: start;}
   .main-webstudio .business-info {display: none;}
-  .main-webstudio .business-info ul {margin-top: 72px;}
+
+  .main-webstudio .business-info h2 {margin-bottom: 72px;}
+
+  .main-webstudio .team {padding-top: 96px;
+                         padding-bottom: 96px;}
   .main-webstudio .team ul {display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
                             gap:30px;
                             padding: 0px 90px;}
+
+  .main-webstudio .clients h2 {margin-bottom: 72px;}
   .main-webstudio .clients .icons-body svg {width:170px;}
   .main-webstudio .clients .icons-body svg rect {width:170px;}
   .main-webstudio .clients .icons-body {column-gap: 24px;}
@@ -851,16 +893,18 @@ footer {background-color: var(--main-color);
   .footer .social .list-icons {margin-block-end:0px;
                               padding-bottom: 20px;}
   .email-footer fieldset div {display: flex;
-                          flex-direction: row;}
-  .email-footer .subscribe-container input {width: 100%;
-                                          margin-bottom: 0px;}
+                              flex-direction: row;
+                              gap:15px;}
+  .email-footer {width:100%;}                           
+  .email-footer .subscribe-container input {width: 50%;
+                                            margin-bottom: 0px;}
 
 }
 
 @media screen and (min-width: 1200px) 
 { .container {width: 1158px;
-  padding-left: 0px;
-  padding-right: 0px;}
+              padding-left: 0px;
+              padding-right: 0px;}
   .navigation-address {padding-top: 2px;}
   .navigation-menu {display: block;
                     margin-left: 76px;}
@@ -898,9 +942,11 @@ footer {background-color: var(--main-color);
                             margin-top: 76px;}
     .heading .order-service-button {margin-top: 48px;
                                     margin-bottom: 76px;}
-    .main-webstudio  .advantages {padding-bottom: 0px;}
+    .main-webstudio  .advantages {padding-bottom: 0px;
+                                  padding-top: 120px;
+                                  padding-bottom: 120px;}
     .main-webstudio  .advantages .cards-description {flex-direction:row;
-                                                     gap: 24px;}
+                                                     gap: 34px;}
     .main-webstudio  .advantages .cards-description li {width: 264px;}
     .main-webstudio .advantages svg {width: 264px;}
     .main-webstudio .advantages .cards-description .description .card-description-studio h3
@@ -910,22 +956,30 @@ footer {background-color: var(--main-color);
         {font: var(--ro400-s16-lh24);
         margin-top: 10px;}
 
-    .main-webstudio .business-info {display: block;}
+    .main-webstudio .business-info {display: block;
+                                    padding-top: 120px;
+                                    padding-bottom: 120px;}
+    .main-webstudio .business-info ul {gap: 34px;}
     
+    .main-webstudio .team {padding-top: 120px;
+                           padding-bottom: 120px;}
     .main-webstudio .team ul {display: flex;
                               flex-direction: row;
                               flex-wrap: nowrap;
-                              gap: 24px;
+                              gap: 34px;
                               margin-top: 72px;
                               padding: 0px;}
 
+    .main-webstudio .clients {padding-top: 120px;
+                              padding-bottom: 120px;}
     .main-webstudio .clients .icons-body svg {width:170px;}
     .main-webstudio .clients .icons-body svg rect {width:170px;}
-    .main-webstudio .clients .icons-body {column-gap: 24px;}
+    .main-webstudio .clients .icons-body {gap: 27px;}
     .footer {display: flex;
              flex-direction: row;
              gap: 115px;}
     .email-footer {width: 453px;
                    margin-bottom: 20px;}
-.email-footer .email-subscribe {margin-left: 15px;}
+    .email-footer fieldset div {gap:15px;}
+    .email-footer .subscribe-container input {width: 70%;}
 }
