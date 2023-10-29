@@ -211,12 +211,10 @@ p {
                                                 margin-top: 0px;
                                                 margin-bottom: 0px;}
 
-.main-webstudio .advantages svg {height: 112px;}
-
 .main-webstudio .advantages svg {width: 100%;
-                                      height: 100%;}
+                                      height: 112px;}
 .main-webstudio .advantages svg rect {width: 100%;
-                                        height: 100%;
+                                        height:112px;
                                         fill:#F4F4FD;}
 
 /*main-webstudio business-info*/
@@ -772,8 +770,10 @@ footer {background-color: var(--main-color);
 
   .main-webstudio  .advantages {padding-top: 96px;
                                 padding-bottom: 96px;}
-  .main-webstudio .advantages svg {width: 100%;}
-  .main-webstudio .advantages svg rect {width: 100%;}
+  .main-webstudio .advantages svg {width: 100%;
+        height: 112px;}
+  .main-webstudio .advantages svg rect {width: 100%;
+                                        height: 112px;}
   .main-webstudio  .advantages .cards-description {flex-direction:column;
                                                     justify-content: center;
                                                     gap:35px;}
@@ -854,8 +854,10 @@ footer {background-color: var(--main-color);
   .main-webstudio .advantages h2{margin-bottom: 72px;}
   .main-webstudio .advantages {padding-top: 96px;
                                 padding-bottom: 96px;}
-  .main-webstudio .advantages svg {width: 100%;}
-  .main-webstudio .advantages svg rect {width: 100%;}
+  .main-webstudio .advantages svg {width: 100%;
+                                   height: 100%;}
+  .main-webstudio .advantages svg rect {width: 100%;
+                                        height: 112px;}
   .main-webstudio .advantages .cards-description {display: flex;
                                                   flex-direction: row;
                                                   flex-wrap: wrap;
@@ -953,7 +955,8 @@ footer {background-color: var(--main-color);
                                                      gap: 34px;
                                                      justify-content: center;}
     .main-webstudio  .advantages .cards-description li {width: 264px;}
-    .main-webstudio .advantages svg {width: 100%;}
+    .main-webstudio .advantages svg {width: 100%;
+                                     height: 112px;}
     .main-webstudio .advantages .cards-description .description .card-description-studio h3
         {font: var(--ro500-s20-lh24);
           margin-top: 0px;}
