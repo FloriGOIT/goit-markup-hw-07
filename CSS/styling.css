@@ -772,11 +772,11 @@ footer {background-color: var(--main-color);
 
   .main-webstudio  .advantages {padding-top: 96px;
                                 padding-bottom: 96px;}
+  .main-webstudio .advantages svg {width: 100%;}
   .main-webstudio  .advantages .cards-description {flex-direction:column;
-                                                    align-items:center;
                                                     justify-content: center;
                                                     gap:35px;}
-  .main-webstudio  .advantages .cards-description li {width: 396px;}
+  .main-webstudio  .advantages .cards-description {width: 396px;}
   
   .main-webstudio .advantages .cards-description .description .card-description-studio h3
       {font: var(--second-heading);}
