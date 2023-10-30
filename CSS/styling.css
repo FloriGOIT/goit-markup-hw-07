@@ -636,6 +636,7 @@ footer {background-color: var(--main-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+  padding-left: 50px;
 }
 .modal-container svg {
   transition-property: fill;
@@ -682,7 +683,8 @@ footer {background-color: var(--main-color);
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: white;
+  color: black;
+  padding-left: 30px;
 }
 .modal-container fieldset textarea::placeholder {
   padding: 8px 16px;
