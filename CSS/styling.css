@@ -737,7 +737,7 @@ footer {background-color: var(--main-color);
 
 /*Mobile-menu*/
 .js-close-menu {position: absolute;
-                margin-top: 10px;
+
                 width: 40px;
                 height: 40px;
                 border: none;
@@ -770,7 +770,6 @@ footer {background-color: var(--main-color);
                                                       margin-bottom: 200px;
                                                       margin-top: 30px;}
 .js-menu-container.is-open .navigation-menu-mobile ul li a {text-decoration: none;
-                                                            font: var(--ro500-s20-lh24);
                                                             color: black;}
 .js-menu-container.is-open .navigation-menu-mobile ul li a:focus,
 .js-menu-container.is-open .navigation-menu-mobile ul li a:hover {color: var(--heighlight-bgcolor);}
@@ -784,7 +783,8 @@ footer {background-color: var(--main-color);
                                                   flex-direction: column;
                                                   color:rgba(67, 68, 85, 1);
                                                   gap: 10px;
-                                                  margin-bottom: 50px;}
+                                                  margin-bottom: 50px;
+                                                  font: var(--ro500-s20-lh24);}
 .js-menu-container.is-open .header-address-mobile li {height: 42px;}                                                 
 .js-menu-container.is-open .header-address-mobile li:focus,
 .js-menu-container.is-open .header-address-mobile li:hover {color: var(--heighlight-bgcolor);
@@ -793,12 +793,12 @@ footer {background-color: var(--main-color);
 
 .js-menu-container.is-open .social-mobile ul {display: flex;
                                            flex-direction: row;
-                                           font: var(--ro400-s12-lh16);
+                                           font: var(--ro500-s16-lh24);
                                            column-gap:10px;}
 .js-menu-container.is-open .social-mobile li  {box-sizing: border-box;
                                                text-decoration: none;
                                                color:rgba(67, 68, 85, 1);
-                                               width: 65px;
+                                               width: 80px;
                                                text-align: center;}
 .js-menu-container.is-open .social-mobile li a {text-decoration: none;}
 .js-menu-container.is-open .social-mobile ul li a:focus,
