@@ -323,13 +323,11 @@ p {
 .main-webstudio .clients .icons-body .logo-customers {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 .main-webstudio .clients .icons-body .logo-customers:focus,
 .main-webstudio .clients .icons-body .logo-customers:hover {
   fill: var(--color-iris);
-  border-color: var(--color-iris);
-} /*transition*/
+  border-color: var(--color-iris);} /*transition*/
 
 .main-webstudio .clients .icons-body .logo-customers svg{
   transition-property: border-color;
@@ -337,7 +335,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-} /*transition*/
+ /*transition*/
 
 
 /*PORTOFOLIO*/
@@ -553,9 +551,8 @@ footer {background-color: var(--main-color);
   letter-spacing: 0.04em;
   padding-left: 10px;
 }
-.subscribe-container input:focus::placeholder, 
-.subscribe-container input:hover::placeholder {color: var(--main-color);}
-
+.subscribe-container input::placeholder:hover,
+.subscribe-container input::placeholder:focus {display: none;}
 .email-footer .email-subscribe {
   display: flex;
   flex-direction: row;
@@ -744,14 +741,8 @@ footer {background-color: var(--main-color);
   visibility: hidden;
 }
 
-@keyframes scaleModal {
-  0% {
-    scale: 0;
-  }
-  100% {
-    scale: 1;
-  }
-}
+@keyframes scaleModal { 0% {scale: 0;}
+                      100% {scale: 1;} }
 
 @media screen and (min-width: 300px) 
 { .navigation-address {justify-content: space-between;
@@ -782,7 +773,7 @@ footer {background-color: var(--main-color);
   .main-webstudio  .advantages {padding-top: 96px;
                                 padding-bottom: 96px;}
   .main-webstudio .advantages svg {width: 100%;
-        height: 112px;}
+                                  height: 112px;}
   .main-webstudio  .advantages .cards-description {flex-direction:row;
                                                     flex-wrap: wrap;
                                                     justify-content: center;
@@ -822,6 +813,7 @@ footer {background-color: var(--main-color);
   .email-footer {width:100%;}
   .email-footer .subscribe-container input {width: 100%;
                                             margin-bottom: 16px;}
+}                                            
 
 @media screen and (min-width: 768px) 
 {
