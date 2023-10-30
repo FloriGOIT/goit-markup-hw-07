@@ -752,16 +752,16 @@ footer {background-color: var(--main-color);
 .js-close-menu:hover {fill: var(--color-iris);}
 
 .js-menu-container {display: none;}
-.js-menu-container.is-open {position: absolute;
+.js-menu-container.is-open {position: fixed;
                             top: 0px;
-                            left: 0px;
+                            right: 0px;
                             display: flex;
                             flex-direction: column;
-                            width: 100vw;
-                            height: 100vh;
-                            background-color: white;
+                            min-width: 380px;
+                            height: 100%;
                             padding-left:40px;
-                            }
+                            background-color: white;
+                           justify-content: center;}
 
 .js-menu-container.is-open .navigation-menu-mobile ul {display: flex;
                                                       flex-direction: column;
