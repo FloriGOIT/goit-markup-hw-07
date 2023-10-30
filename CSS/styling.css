@@ -753,7 +753,8 @@ footer {background-color: var(--main-color);
 .js-close-menu:focus,
 .js-close-menu:hover {fill: var(--color-iris);}
 
-.js-menu-container {display: none;}
+.js-menu-container {display: none;
+                    cursor: pointer;}
 .js-menu-container.is-open {position: fixed;
                             top: 0px;
                             right: 0px;
@@ -822,8 +823,9 @@ footer {background-color: var(--main-color);
   .navigation-address {justify-content: space-between;
                        padding-bottom: 15px;
                        padding-top: 15px;}
-.navigation-address .mobile-menu .hamburger-hover:focus,
-.navigation-address .mobile-menu .hamburger-hover:hover {fill: var(--heighlight-bgcolor);}
+  .navigation-address .mobile-menu {cursor: pointer;}                       
+  .navigation-address .mobile-menu .hamburger-hover:focus,
+  .navigation-address .mobile-menu .hamburger-hover:hover {fill: var(--heighlight-bgcolor);}
 
   .navigation-menu {display: none;}
   .header-address {display: none;}
