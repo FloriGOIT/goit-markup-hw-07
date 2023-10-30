@@ -755,7 +755,7 @@ footer {background-color: var(--main-color);
                             right: 0px;
                             display: flex;
                             flex-direction: column;
-                            min-width: 380px;
+                            min-width: 400px;
                             height: 100%;
                             padding-left:40px;
                             padding-right: 15px;
