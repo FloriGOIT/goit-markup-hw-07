@@ -544,6 +544,8 @@ footer {background-color: var(--main-color);
   outline-color: var(--main-color);
   padding-top: 8px;
   padding-bottom: 8px;
+  color: white;
+  padding-left: 10px;
 }
 .subscribe-container input::placeholder {
   color: rgba(255, 255, 255, 0.3);
@@ -551,6 +553,9 @@ footer {background-color: var(--main-color);
   letter-spacing: 0.04em;
   padding-left: 10px;
 }
+.subscribe-container input:focus::placeholder, 
+.subscribe-container input:hover::placeholder {color: var(--main-color);}
+
 .email-footer .email-subscribe {
   display: flex;
   flex-direction: row;
@@ -680,6 +685,7 @@ footer {background-color: var(--main-color);
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
 }
 .modal-container fieldset textarea::placeholder {
   padding: 8px 16px;
