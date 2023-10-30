@@ -315,7 +315,11 @@ p {
  margin-bottom: 0px;}
 
 .main-webstudio .clients li{height: 88px;}
-.main-webstudio .clients .icons-body svg {height: 88px;}
+.main-webstudio .clients .icons-body svg {height: 88px;
+                                          border-style:solid;
+                                          border-color: black;
+                                          border-width: 1px;
+                                          border-radius: 4px;}
 .main-webstudio .clients .icons-body .logo-customers {
   transition-property: fill;
   transition-duration: 250ms;
@@ -715,7 +719,7 @@ footer {background-color: var(--main-color);
   accent-color: var(--color-iris);
   z-index: 2;
 }
-.modal-container fieldset .checkbox-label p {
+.modal-container fieldset .checkbox-label .policy {
   margin-left: 0px;
 }
 
@@ -880,11 +884,7 @@ footer {background-color: var(--main-color);
                             padding: 0px 90px;}
 
   .main-webstudio .clients h2 {margin-bottom: 72px;}
-  .main-webstudio .clients .icons-body svg {width:170px;
-                                            border-style:solid;
-                                            border-color: black;
-                                            border-width: 1px;
-                                            border-radius: 4px;;}
+  .main-webstudio .clients .icons-body svg {width:170px;}
 
   .main-webstudio .clients .icons-body {column-gap: 24px;}
   .footer {display: flex;
@@ -928,6 +928,7 @@ footer {background-color: var(--main-color);
                 rgba(46, 47, 66, 0.7)
               ),
               url("../images/people-office-1440x600-1x.png");
+            background-size: cover;
             background-repeat: no-repeat;}
           @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
