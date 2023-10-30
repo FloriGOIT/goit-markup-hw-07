@@ -680,9 +680,10 @@ footer {background-color: var(--main-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: black;
   padding-left: 30px;
+  padding-top: 5px;
 }
 .modal-container fieldset textarea::placeholder {
-  padding: 8px 16px;
+  padding: 8px 0px;
   color: rgba(46, 47, 66, 0.4);
   font: var(--ro400-s12-lh14);
   letter-spacing: 0.04em;
