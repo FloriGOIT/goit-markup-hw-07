@@ -324,16 +324,15 @@ p {
 .main-webstudio .clients .icons-body .logo-customers:focus,
 .main-webstudio .clients .icons-body .logo-customers:hover {
   fill: var(--color-iris);
+  border-color: var(--color-iris);
 } /*transition*/
 
-.main-webstudio .clients .icons-body .logo-customers rect {
-  transition-property: stroke;
+.main-webstudio .clients .icons-body .logo-customers svg{
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-webstudio .clients .icons-body .logo-customers rect:focus,
-.main-webstudio .clients .icons-body .logo-customers rect:hover {
-  stroke: var(--color-iris);
+
 } /*transition*/
 
 
@@ -796,7 +795,6 @@ footer {background-color: var(--main-color);
   .main-webstudio .clients {padding-top: 96px;
                             padding-bottom: 96px;}
   .main-webstudio .clients .icons-body svg {width:190px;}
-  .main-webstudio .clients .icons-body svg rect {width:190px;}
   .main-webstudio .clients .icons-body {column-gap: 16px;}
 
   .footer {
@@ -882,8 +880,12 @@ footer {background-color: var(--main-color);
                             padding: 0px 90px;}
 
   .main-webstudio .clients h2 {margin-bottom: 72px;}
-  .main-webstudio .clients .icons-body svg {width:170px;}
-  .main-webstudio .clients .icons-body svg rect {width:170px;}
+  .main-webstudio .clients .icons-body svg {width:170px;
+                                            border-style:solid;
+                                            border-color: black;
+                                            border-width: 1px;
+                                            border-radius: 4px;;}
+
   .main-webstudio .clients .icons-body {column-gap: 24px;}
   .footer {display: flex;
           flex-direction: row;
@@ -926,7 +928,6 @@ footer {background-color: var(--main-color);
                 rgba(46, 47, 66, 0.7)
               ),
               url("../images/people-office-1440x600-1x.png");
-            background-size: cover;
             background-repeat: no-repeat;}
           @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
@@ -977,7 +978,6 @@ footer {background-color: var(--main-color);
     .main-webstudio .clients {padding-top: 120px;
                               padding-bottom: 120px;}
     .main-webstudio .clients .icons-body svg {width:170px;}
-    .main-webstudio .clients .icons-body svg rect {width:170px;}
     .main-webstudio .clients .icons-body {gap: 27px;}
     .footer {display: flex;
              flex-direction: row;
