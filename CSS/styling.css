@@ -97,12 +97,7 @@ p {
 
 
 .navigation-menu .navigation-pages .nav-link:focus,
-.navigation-menu .navigation-pages .nav-link:hover,
-.navigation-menu .navigation-pages .nav-link:active {
-  border-bottom: 1px;
-  border-style: solid;
-  float: none;
-}
+.navigation-menu .navigation-pages .nav-link:hover {color:var(--heighlight-bgcolor) }
 
 .current {
   color: var(--color-iris);
