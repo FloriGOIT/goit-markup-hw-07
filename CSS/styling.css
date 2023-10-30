@@ -798,12 +798,13 @@ footer {background-color: var(--main-color);
 .js-menu-container.is-open .social-mobile li  {box-sizing: border-box;
                                                text-decoration: none;
                                                color:rgba(67, 68, 85, 1);
-                                               width: 80px;
+                                               width: 83px;
                                                text-align: center;}
-.js-menu-container.is-open .social-mobile li a {text-decoration: none;}
+.js-menu-container.is-open .social-mobile li a {text-decoration: none;
+                                                color:rgba(67, 68, 85, 1);}
 .js-menu-container.is-open .social-mobile ul li a:focus,
 .js-menu-container.is-open .social-mobile ul li a:hover {color: var(--heighlight-bgcolor);
-                                                         font-size: 14px;}  
+                                                         font-size: 18px;}  
                        
 .js-menu-container.is-open .social-mobile ul li:not(:last-child) 
                                                 {border-right: 1px solid rgba(33, 33, 33, 0.2);
